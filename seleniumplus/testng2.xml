@@ -5,7 +5,7 @@
 	<test name="Test1">
 	
 		<classes>
-			<class name="seleniumplus.tests.TestDemoWebShopLogin"></class>
+			<class name="seleniumplus.Test2"></class>
 		</classes>
 	</test>
 </suite> <!-- Suite -->
