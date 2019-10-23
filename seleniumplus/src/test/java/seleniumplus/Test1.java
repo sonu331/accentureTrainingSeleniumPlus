@@ -13,7 +13,7 @@ public class Test1 {
 	@Test(groups = {"tag1"})
 	public void testCreditCards() throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://newsite.hdfcbank.com/");
 		driver.manage().window().maximize();
