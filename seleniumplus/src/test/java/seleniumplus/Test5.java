@@ -25,7 +25,9 @@ public class Test5 {
 	{
 		if(value2.contentEquals("chrome"))
 		{
-			DesiredCapabilities ds=DesiredCapabilities.chrome();
+			//DesiredCapabilities ds=DesiredCapabilities.chrome();
+			DesiredCapabilities ds=new DesiredCapabilities();
+			ds.setBrowserName(value2);
 			ds.setPlatform(Platform.ANY);
 			driver=new RemoteWebDriver(new URL(value1),ds );
 			driver.get("http://demowebshop.tricentis.com/login");
@@ -34,7 +36,9 @@ public class Test5 {
 		}
 		else if(value2.contentEquals("ie"))
 		{
-			DesiredCapabilities ds=DesiredCapabilities.internetExplorer();
+			//DesiredCapabilities ds=DesiredCapabilities.internetExplorer();
+			DesiredCapabilities ds=new DesiredCapabilities();
+			ds.setBrowserName(value2);
 			ds.setPlatform(Platform.ANY);
 			driver=new RemoteWebDriver(new URL(value1),ds );
 			driver.get("http://demowebshop.tricentis.com/login");
