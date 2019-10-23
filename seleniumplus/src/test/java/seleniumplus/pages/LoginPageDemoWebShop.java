@@ -15,15 +15,18 @@ public class LoginPageDemoWebShop {
 	WebElement forgotPassword;
 	@FindBy(how = How.CSS,using = "input[value='Log in']")
 	WebElement loginButton;
+	@FindBy(how = How.LINK_TEXT,using = "Log out")
+	WebElement logout;
 	public LoginPageDemoWebShop(WebDriver driver) {
 		super();
 		this.driver = driver;
 	}
-	public void loginInfo()
+	public WebElement loginInfo()
 	{
-		email.sendKeys("askmail29@email.com");
+		email.sendKeys("askmail@email.com");
 		password.sendKeys("abc123");
 		loginButton.click();
+		return logout;
 	}
 
 }

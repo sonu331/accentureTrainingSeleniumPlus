@@ -24,7 +24,10 @@ public class WelcomePageDemoWebShop {
 		registerLink.click();
 		return driver.getTitle();
 	}
-
+	/**
+	 * this method returns the url of the page
+	 * @return String  - Current URL of the Page
+	 */
 	public String clickLoginLink()
 	{
 		loginLink.click();
