@@ -3,17 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumplus.Test8">
+      <class name="seleniumplus.tests.TestDemoWebShopLogin">
         <methods>
-          <include name="testSkip"/>
-          <include name="testDemoWebShopLogin"/>
-          <include name="beforeMethod"/>
-          <include name="testFail"/>
+          <include name="testLoginLink"/>
           <include name="afterTest"/>
+          <include name="testLoginInfo"/>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- seleniumplus.Test8 -->
+      </class> <!-- seleniumplus.tests.TestDemoWebShopLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
